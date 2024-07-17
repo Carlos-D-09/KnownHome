@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('static',filename='users/CSS/index.css')}}">
+{% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static', filename='users/JS/index.js')}}" type="module"></script>
+<script src="{{url_for('static', filename='users/JS/requests.js')}}" type="module"></script>
+<script src="{{url_for('static', filename='users/JS/utils.js')}}" type="module"></script>
+
+  <!-- Chart js  -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+{% endblock %}
+
+{% block title %}
+    Home {{g.user['username']}}
+{% endblock %}
+
+{% block content %}
+<div class="index-container">
+    <div class="general-statistics">
+        <div class="statistic">
+            <span class="dot-active">
+                <span></span>
+            </span>
+            <p><b>Maestros registrados: </b>{{statistics.teachers}}</p>
+        </div>
+        <div class="statistic">
+            <span class="dot-active">
+                <span></span>
+            </span>
+            <p><b>Grupos registrados: </b>{{statistics.groups}}</p>
+        </div>
+        <div class="statistic">
+            <span class="dot-active">
+                <span></span>
+            </span>
+            <p><b>Alumnos registrados: </b>{{statistics.students}}</p>
+        </div>
+        <div class="statistic">
+            <span class="dot-active">
+                <span></span>
+            </span>
+            <p><b>Imágenes clasificadas: </b>{{statistics.total_images}}</p>
+        </div>
+    </div>
+    <div class="graphs-container">
+        <!-- Gráfica clasificaciones correctas e incorrectas en general -->
+        <div class="graph-container">
+            <div class="graph-info">
+                {% if statistics.total_images == 0 %}
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        <p>Erróneas: 0%</p>
+                    </div>
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-check" ></i>
+                        <p>Correctas: 0%</p>
+                    </div>
+                {% else %}
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        {% if statistics.total_images-statistics.right_images == 0 %}
+                            <p>Erróneas: 0%</p>
+                        {% else %}
+                            <p>Erróneas: {{(100*(statistics.total_images-statistics.right_images))//statistics.total_images}}%</p>
+                        {% endif %}
+                    </div>
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-check" ></i>
+                        {% if statistics.right_images == 0 %}
+                            <p>Correctas: 0%</p>
+                        {% else %}
+                            <p>Correctas: {{(100*statistics.right_images)//statistics.total_images}}%</p>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="graph-content">
+                <div class="graph">
+                    {% if statistics.total_images != 0 %}
+                    <canvas data-total-images="{{ statistics.total_images }}" data-right-images="{{ statistics.right_images }}" id="scanned-images"></canvas>
+                    {% else %}
+                        <div class="no-images">
+                            <div class="sad-face">
+                                <div class="eye">
+                                    <span></span>
+                                </div>
+                                <div class="eye">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="mouth">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Todavía no se han subidos imágenes</p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="graph-footer">
+                <h2>Clasificaciones correctas vs clasificaciones erróneas</h2>
+            </div>
+        </div>
+        <!-- Gráfica clasificaciones correctas e incorrectas por objeto -->
+        <div class="graph-container">
+            <div class="graph-info">
+                {% if object_statistics.total_images == 0 %}
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        <p id="wrong-images">Erróneas: 0%</p>
+                    </div>
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-check" ></i>
+                        <p id="right-images">Correctas: 0%</p>
+                    </div>
+                {% else %}
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        {% if object_statistics.total_images-object_statistics.right_images == 0 %}
+                            <p id="wrong-images">Erróneas: 0%</p>
+                        {% else %}
+                            <p id="wrong-images">Erróneas: {{(100*(object_statistics.total_images-object_statistics.right_images))//object_statistics.total_images}}%</p>
+                        {% endif %}
+                    </div>
+                    <div class="graph-tag">
+                        <i class="fa-regular fa-circle-check" ></i>
+                        {% if object_statistics.right_images == 0 %}
+                            <p id="right-images">Correctas: 0%</p>
+                        {% else %}
+                            <p id="right-images">Correctas: {{(100*object_statistics.right_images)//object_statistics.total_images}}%</p>
+                        {% endif %}
+                    </div>
+                {% endif %}
+                <select name="objects" id="objects" class="graph-select">
+                    {% for object in objects%}
+                        <option value="{{object.id}}">{{object.objeto}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="graph-content">
+                <div class="graph" id="object-graph">
+                    {% if object_statistics.total_images != 0 %}
+                        <canvas data-total-images="{{ object_statistics.total_images }}" data-right-images="{{ object_statistics.right_images }}" id="scanned-images-by-object"></canvas>
+                    {% else %}
+                    <div class="no-images">
+                        <div class="sad-face">
+                            <div class="eye">
+                                <span></span>
+                            </div>
+                            <div class="eye">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="mouth">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Todavía no se han escaneado imágenes con este objeto</p>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="graph-footer">
+                <h2>Clasificaciones correctas vs erróneas por objeto</h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}
+Grupos
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('static',filename='users/CSS/admin_groups.css')}}">
+{% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static', filename='users/JS/admin_groups/main.js')}}" type="module"></script>
+{% endblock %}
+
+{% block content %}
+    <div id="table-container" class="table-container">
+        <div class="table-header">
+            <h2>
+                Grupos de mis maestros
+            </h2>
+        </div>
+        <div class="table-filters">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Grupo" autocomplete="off">
+            </div>
+            <button class="button-info button-disabled" id="search-button" disabled>
+                <i class="fa-brands fa-searchengin"></i>
+            </button>
+        </div>
+        <div class="table-content">
+            <table id="table-groups" class="table-style">
+                <tr>
+                    <th class="rigth-border">Nombre del grupo</th>
+                    <th class="rigth-border">Descripción</th>
+                    <th class="rigth-border">Maestro</th>
+                    <th class="rigth-border">Número de alumnos</th>
+                    <th class="rigth-border">Fecha de creación</th>
+                    <th>Opciones</th>
+                </tr>
+                {% for grupo in grupos %}
+                <tr>
+                    <td class="top-border rigth-border">{{grupo.nombre}}</td>
+                    <td class="top-border rigth-border">{{grupo.descripcion}}</td>
+                    <td class="top-border rigth-border">{{grupo.nombre_maestro}}</td>
+                    <td class="top-border rigth-border students">
+                        <p>
+                            {{grupo.num_alumnos}}
+                        </p>
+                        <a href="#" onclick="show_students({{grupo.id}})">
+                            <i class="fa-solid fa-eye"></i>
+                        </a>
+                    </td>
+                    <td class="top-border rigth-border">{{grupo.created_at}}</td>
+                    <td class="top-border">
+                        <div class="options-container">
+                            <button class="button-info" onclick="show_edit_form({{grupo.id}})">
+                                <i class="fa-solid fa-user-pen"></i>
+                            </button>
+                            <button class="button-danger" onclick="show_alert_delete({{grupo.id}})">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}

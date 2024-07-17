@@ -1,0 +1,76 @@
+{
+    "target_class": "Codigos_verificacion",
+    "data": [
+        {
+            "codigo": "123456",
+            "correo": "test5@test.com",
+            "used": false,
+            "!refs": {
+                "id_usuario": {
+                    "target_class": "Users",
+                    "criteria": {
+                        "id": "4"
+                    },
+                    "field": "id"
+                }
+            }
+        },
+        {
+            "codigo": "123456",
+            "correo": "test6@test.com",
+            "used": false,
+            "!refs": {
+                "id_usuario": {
+                    "target_class": "Users",
+                    "criteria": {
+                        "id": "5"
+                    },
+                    "field": "id"
+                }
+            }
+        },
+        {
+            "codigo": "123456",
+            "correo": "test7@test.com",
+            "used": false,
+            "!refs": {
+                "id_usuario": {
+                    "target_class": "Users",
+                    "criteria": {
+                        "id": "6"
+                    },
+                    "field": "id"
+                }
+            }
+        },
+        {
+            "codigo": "123456",
+            "correo": "test8@test.com",
+            "used": false,
+            "!refs": {
+                "id_usuario": {
+                    "target_class": "Users",
+                    "criteria": {
+                        "id": "7"
+                    },
+                    "field": "id"
+                }
+            }
+        },
+        {
+            "codigo": "123456",
+            "correo": "test9@test.com",
+            "used": false,
+            "!refs": {
+                "id_usuario": {
+                    "target_class": "Users",
+                    "criteria": {
+                        "id": "8"
+                    },
+                    "field": "id"
+                }
+            }
+        }
+        
+    ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate email - knowhome</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{url_for('static', filename='users/CSS/validate_email.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='buttons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='text.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='buttons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='animations.css')}}">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/36c2a6041f.js" crossorigin="anonymous"></script>
+    
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='users/JS/profile/validate_email.js')}}"></script>
+
+</head>
+<body>
+    <div class="code-container">
+        <div class="title-container">
+            <div class="flex-title">
+                <h1>Validación de email</h1>
+            </div>
+            <div class="flex-title">
+                <p>
+                    Hola {{g.user['username']}}. Porfavor introduce el código de verificación enviado al correo: <br> <br>
+                    {{g.user['correo']}}
+                </p>
+            </div>
+            <div class="flex-title" id="alert-container">
+                <p class="text-danger-bold" id="text-alert"></p>
+            </div>
+        </div>
+        <div class="code-form">
+            <div class="inputs-container" id="inputs-container">
+                <input type="text" maxlength="1" id="1" class="input-code" onkeyup="handle_next_input(this);" autocomplete="off">
+                <input type="text" maxlength="1" id="2" class="input-code" onkeyup="handle_next_input(this);" autocomplete="off">
+                <input type="text" maxlength="1" id="3" class="input-code" onkeyup="handle_next_input(this);" autocomplete="off">
+                <input type="text" maxlength="1" id="4" class="input-code" onkeyup="handle_next_input(this);" autocomplete="off">
+                <input type="text" maxlength="1" id="5" class="input-code" onkeyup="handle_next_input(this);" autocomplete="off">
+                <input type="text" maxlength="1" id="6" class="input-code" onkeyup="handle_next_input(this);" autocomplete="off">
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button class="button-auth" id="verificar-button">Verificar</button>
+        </div>
+    </div>
+    <div class="code-help">
+        <a href="#" id="reenviar-codigo">Reenviar código</a>
+        <hr>
+        <a href="/user/recover_email_not_validated" id="correo-erroneo">¿Te equivocaste de correo?</a>
+    </div>
+</body>
+</html>

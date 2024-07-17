@@ -1,0 +1,6 @@
+venv 
+__pycache__/
+Contexto
+Cambios
+.env
+*.keras

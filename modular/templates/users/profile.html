@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{user.username}} profile
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('static',filename='users/CSS/profile.css')}}">
+{% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static', filename='users/JS/profile/main.js')}}" type="module"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="profile-card">
+        <div class="profile-header">
+            <h2>Mi perfil</h2>
+        </div>
+        <div class="profile-image">
+            <img id="profile-image" src="{{url_for('static', filename='users/Images/header_image.jpg')}}" alt="" >
+        </div>
+        <div class="alert">
+            <div class="alert-content text-warning" id="alert-content">
+
+            </div>
+        </div>
+        <div class="profile-text">
+            <div class="profile-description">
+                <div class="icon-info" id="username-container">
+                    <i class="fa-solid fa-pen-nib" id="username-icon"></i>
+                    <b>Username:</b>
+                    <p>{{user.username}}</p>
+                </div>
+
+                <div class="icon-info" id="correo-container">
+                    <i class="fa-solid fa-pen-nib" id="correo-icon"></i>
+                    <b>Correo: </b>
+                    <p>{{user.correo}}</p>
+                </div>
+
+                <div class="icon-info" id="password-container">
+                    <i class="fa-solid fa-pen-nib" id="password-icon"></i>
+                    <b>Password: </b>
+                    <p>*********</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-buttons" id="buttons-container">
+        </div>
+        </div>
+{% endblock %}

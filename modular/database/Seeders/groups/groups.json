@@ -1,0 +1,55 @@
+{
+    "target_class": "Grupos",
+    "data": [
+      {
+        "nombre": "Grupo de prueba 1",
+        "descripcion": "Este es un grupo de prueba",
+        "id_maestro": 1
+      },
+      {
+        "nombre": "Grupo de prueba 2",
+        "descripcion": "Este es otro grupo de prueba",
+        "id_maestro": 2
+      },
+      {
+        "nombre": "Grupo de prueba 3",
+        "descripcion": "Un tercer grupo de prueba",
+        "id_maestro": 3
+      },
+      {
+        "nombre": "Grupo de prueba 4",
+        "descripcion": "Otro grupo para pruebas",
+        "id_maestro": 4
+      },
+      {
+        "nombre": "Grupo de prueba 5",
+        "descripcion": "Quinto grupo de prueba",
+        "id_maestro": 5
+      },
+      {
+        "nombre": "Grupo de prueba 6",
+        "descripcion": "Grupo numero seis para pruebas",
+        "id_maestro": 6
+      },
+      {
+        "nombre": "Grupo de prueba 7",
+        "descripcion": "Septimo grupo de prueba",
+        "id_maestro": 7
+      },
+      {
+        "nombre": "Grupo de prueba 8",
+        "descripcion": "Octavo grupo de prueba",
+        "id_maestro": 8
+      },
+      {
+        "nombre": "Grupo de prueba 9",
+        "descripcion": "Noveno grupo de prueba",
+        "id_maestro": 9
+      },
+      {
+        "nombre": "Grupo de prueba 10",
+        "descripcion": "Decimo grupo de prueba",
+        "id_maestro": 10
+      }
+    ]  
+}

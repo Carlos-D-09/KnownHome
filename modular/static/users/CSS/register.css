@@ -1,0 +1,193 @@
+@media (min-width: 1601px){
+    .register-card{
+        width: 35%;
+    }
+}
+@media (max-width: 1600px){
+    .register-card{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1400px){
+    .register-card{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1200px){
+    .register-card{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px){
+    .register-card{
+        width: 65%;
+    }
+}
+
+@media (max-width: 900px){
+    .register-card{
+        width: 75%;
+    }
+}
+
+@media (max-width: 800px){
+    .register-card{
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px){
+    .register-card{
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .register-card {
+        width: 95%;
+    }
+}
+
+.register-card{
+    height: 70%;
+
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 86px 0px #adadad;
+
+    display: grid;
+    grid-template-rows: 15% 10% 60% 15%;
+    grid-template-columns: 1fr;
+
+    overflow: scroll;
+}
+
+.register-card::-webkit-scrollbar{
+    display: none;
+}
+
+.register-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 800px){
+    .register-header{
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 500px){
+    .register-header{
+        font-size: .8em;
+    }
+}
+
+.register-header h2{
+    margin: 0px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.register-alert{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .register-alert-content {
+        width: 80%;
+    }
+}
+
+@media (min-width: 601px) {
+    .register-alert-content {
+        width: 70%;
+    }
+}
+
+.register-alert-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    transition: 1s;
+}
+
+.register-inputs{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.register-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-input-group{
+    max-width: 90%;
+    min-width: 64%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+
+}
+
+.register-input-group-label{
+    display: block;
+}
+
+.register-input-group-field input{
+    width: 100%;
+    font-size: 1.1em;
+    font-family:'Times New Roman';
+}
+
+.register-select-group{
+    max-width: 90%;
+    min-width: 64%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.register-select-group select{
+    font-size: 1em;
+    padding: 5px;
+    outline: 0px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px;
+    box-shadow: 2px 2px 4px;
+}
+
+.register-select-group option{
+    outline: 0px;
+    border-radius: 4px;
+}
+
+.register-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,43 @@
+{
+    "target_class": "Codigos_verificacion",
+    "data": [{
+        "codigo": "123456",
+        "correo": "test@test.com",
+        "used": true,
+        "!refs": {
+            "id_usuario": {
+                "target_class": "Users",
+                "criteria":{
+                    "id": "1"
+                },
+                "field":"id"
+            }
+        }
+    },{
+        "codigo": "123456",
+        "correo": "test2@test.com",
+        "used": true,
+        "!refs": {
+            "id_usuario": {
+                "target_class": "Users",
+                "criteria":{
+                    "id": "2"
+                },
+                "field":"id"
+            }
+        }
+    },{
+        "codigo": "123456",
+        "correo": "test3@test.com",
+        "used": true,
+        "!refs": {
+            "id_usuario": {
+                "target_class": "Users",
+                "criteria":{
+                    "id": "3"
+                },
+                "field":"id"
+            }
+        }
+    }]
+}

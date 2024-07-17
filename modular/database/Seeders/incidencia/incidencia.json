@@ -1,0 +1,25 @@
+{
+    "target_class": "Incidencia",
+    "data": [
+        {
+            "nombre": "Bajo", 
+            "descripcion":"El objeto casi no esta presenta en accidentes.", 
+            "recomendacion": "Se recomienda para el uso de todas las edades, sin necesidad de la supervision de un adulto."
+        },
+        {
+            "nombre": "Medio-Bajo", 
+            "descripcion":"El objeto se encuentra regularmente envuelto en accidentes. ", 
+            "recomendacion": "Se recomienda para el de niños, sin necesidad de la supervision de un adulto."
+        },
+        {
+            "nombre": "Medio-Alto", 
+            "descripcion":"Este objeto se ve envuelto en accidentes por arriba del promedio.", 
+            "recomendacion":"Se recomienda para el uso de niños, bajo la supervision de un adulto."
+        },
+        {
+            "nombre": "Alto", 
+            "descripcion":"Este objeto tiene una alta incidencia.", 
+            "recomendacion": "No se recomienda para el uso de niños, sin la supervision de un adulto."
+        }
+    ]
+}

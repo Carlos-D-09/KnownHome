@@ -1,0 +1,56 @@
+{
+    "target_class": "Maestros",
+    "data": [
+        {
+        "username": "teacher test 1",
+        "password": "Test12345?",
+        "registered_by": "4"
+        },
+        {
+        "username": "teacher test 2",
+        "password": "Test12345?",
+        "registered_by": "4"
+        },
+        {
+        "username": "teacher test 3",
+        "password": "Test12345?",
+        "registered_by": "5"
+        },
+        {
+        "username": "teacher test 4",
+        "password": "Test12345?",
+        "registered_by": "5"
+        },
+        {
+        "username": "teacher test 5",
+        "password": "Test12345?",
+        "registered_by": "6"
+        },
+        {
+        "username": "teacher test 6",
+        "password": "Test12345?",
+        "registered_by": "6"
+        },
+        {
+        "username": "teacher test 7",
+        "password": "Test12345?",
+        "registered_by": "7"
+        },
+        {
+        "username": "teacher test 8",
+        "password": "Test12345?",
+        "registered_by": "7"
+        },
+        {
+        "username": "teacher test 9",
+        "password": "Test12345?",
+        "registered_by": "8"
+        },
+        {
+        "username": "teacher test 10",
+        "password": "Test12345?",
+        "registered_by": "8"
+        }
+    ]  
+      
+}

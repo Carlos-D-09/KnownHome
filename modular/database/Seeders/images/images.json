@@ -1,0 +1,2046 @@
+{
+    "target_class":"Imagenes_escaneadas",
+    "data": [
+        {
+            "nombre": "test 1",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 1,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 2",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 1,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 3",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 1,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 4",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 2,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 5",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 2,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 6",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 2,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 7",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 3,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 8",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 3,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 9",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 4,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 10",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 4,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 11",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 5,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 12",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 5,
+            "id_grupo": 1, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 13",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 6,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 14",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 6,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 15",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 6,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 16",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 7,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 17",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 7,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 18",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 7,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 19",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 8,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 20",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 8,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 21",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 9,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 22",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 9,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 23",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 10,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 24",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 10,
+            "id_grupo": 2, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 25",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 11,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 26",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 11,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 27",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 11,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 28",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 12,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 29",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 12,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 30",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 12,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 31",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 13,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 32",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 13,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 33",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 14,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 34",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 14,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 35",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 15,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 36",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 15,
+            "id_grupo": 3, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 37",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 16,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 38",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 16,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 39",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 16,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 40",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 17,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 41",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 17,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 42",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 17,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 43",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 18,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 44",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 18,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 45",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 19,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 46",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 19,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 47",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 20,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 48",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 20,
+            "id_grupo": 4, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 37",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 21,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 38",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 21,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 39",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 21,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 40",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 22,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 41",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 22,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 42",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 22,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 43",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 23,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 44",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 23,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 45",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 24,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 46",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 24,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 47",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 25,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 48",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 25,
+            "id_grupo": 5, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 49",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 26,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 50",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 26,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 51",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 26,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 52",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 27,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 53",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 27,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 54",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 27,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 55",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 28,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 56",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 28,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 57",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 29,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 58",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 29,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 59",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 30,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 60",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 30,
+            "id_grupo": 6, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 61",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 31,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 62",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 31,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 63",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 31,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 64",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 32,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 65",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 32,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 66",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 32,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 67",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 33,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 68",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 33,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 69",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 34,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 70",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 34,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 71",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 35,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 72",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 35,
+            "id_grupo": 7, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 73",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 36,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 74",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 36,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 75",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 36,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 76",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 37,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 77",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 37,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 78",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 37,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 79",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 38,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 80",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 38,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 81",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 39,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 82",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 39,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 83",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 40,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 84",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 40,
+            "id_grupo": 8, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 85",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 41,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 86",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 41,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 87",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 41,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 88",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 42,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 89",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 42,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 90",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 43,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 91",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 44,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 92",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 44,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 93",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 45,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 94",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 45,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 95",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 46,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 96",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 46,
+            "id_grupo": 9, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 97",
+            "ruta": "/static/images/lapiz/lapiz_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 47,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 98",
+            "ruta": "/static/images/lapiz/lapiz_2.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 47,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 99",
+            "ruta": "/static/images/lapiz/lapiz_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 47,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "1"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 100",
+            "ruta": "/static/images/taza/taza_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 48,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 101",
+            "ruta": "/static/images/taza/taza_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 48,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 102",
+            "ruta": "/static/images/taza/taza_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 48,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "2"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 103",
+            "ruta": "/static/images/tijeras/tijeras_1.jpeg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 49,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 104",
+            "ruta": "/static/images/tijeras/tijeras_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 49,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 105",
+            "ruta": "/static/images/tijeras/tijeras_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 49,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "3"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 106",
+            "ruta": "/static/images/vasos/vaso_1.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 50,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 107",
+            "ruta": "/static/images/vasos/vaso_2.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 50,
+            "id_grupo": 10, 
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            }
+        },{
+            "nombre": "test 108",
+            "ruta": "/static/images/vasos/vaso_3.jpg",
+            "autorizada": 1,
+            "clasificacion_correcta": 1, 
+            "clasificada": 1,
+            "id_alumno": 50,
+            "id_grupo": 10,
+            "!refs": {
+                "id_objeto": {
+                    "target_class": "Objetos",
+                    "criteria":{
+                        "id": "4"
+                    },
+                    "field":"id"
+                }
+            } 
+        }
+    ]
+}

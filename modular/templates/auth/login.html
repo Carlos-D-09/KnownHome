@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión - Knowhome</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{{url_for('static', filename='auth/CSS/login.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='text.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='inputs.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='buttons.css')}}">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/36c2a6041f.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='auth/JS/login.js')}}"></script>
+</head>
+<body>
+    <div class="login-form-container">
+        <div class="login-title">
+            <h1>Knowhome</h1>
+            <h3>Iniciar Sesión</h3>
+        </div>
+        <div class="login-form">
+            <div class="inputs-container"">
+                <p class="text-danger-bold" id="text-alert"></p>
+                <input type="text" id="email" name="email" class="input-border-bottom-transparent" placeholder="Correo electronico">
+                <input type="password" id="password" name="password" class="input-border-bottom-transparent" placeholder="Password">
+            </div>
+        </div>
+        <div class="login-buttons">
+            <button class="button-auth" id="login-button" >
+                Iniciar sesión
+            </button>
+        </div>
+    </div>
+    <div class="login-help">
+        <a href="/auth/login_by_username" id="login-by-username">Iniciar sesión con nombre de usuario</a>
+    </div>
+</body>
+</html>

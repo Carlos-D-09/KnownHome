@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} - Knowhome</title>
+    
+    <!-- Styles -->
+    {% block styles %}{% endblock %}
+    <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='header.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='nav_bar.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='buttons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='text.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='inputs.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='table.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='animations.css')}}">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/36c2a6041f.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='users/JS/base.js')}}"></script>
+    {% block scripts %}{% endblock %}
+</head>
+<body>
+    <header class="header-bar">
+        <nav id="nav-bar" class="nav-bar">
+            <div class="nav-bar-content">
+                <div id="link-0" class="nav-bar-toggle-container">
+                    <a id="button-collapse">
+                        <div class="nav-bar-toggle"  id="button-collapse-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <ul id="nav-list" class="nav-list">
+                {% if g.user['rol'] == 'supervisor' %}
+                    <li class="list-option" id="option-1">
+                        <a href="/user" id="link-1" class="icon">
+                            <i class="fa-solid fa-house fa-2x" id="icon-1"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-1">Inicio</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="list-option" id="option-2">
+                        <a href="/user/admin_images" id="link-2" class="icon">
+                            <i class="fa-solid fa-images fa-2x" id="icon-2"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-2">Imágenes</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="list-option" id="option-3">
+                        <a href="/user/admin_users" id="link-3" class="icon">
+                            <i class="fa-solid fa-users fa-2x" id="icon-3"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-3">Usuarios</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="list-option" id="option-4">
+                        <a href="/user/register" id="link-4" class="icon">
+                            <i class="fa-solid fa-address-card fa-2x" id="icon-5"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-4">Registrar usuarios</p>
+                            </div>
+                        </a>
+                    </li>
+                {% elif  g.user['rol'] == 'administrador'%}
+                    <li class="list-option" id="option-1">
+                        <a href="/user" id="link-1" class="icon">
+                            <i class="fa-solid fa-house fa-2x"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-1">Inicio</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="list-option" id="option-2">
+                        <a href="/user/admin_images" id="link-2" class="icon">
+                            <i class="fa-regular fa-images fa-2x"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-2">Imágenes</p>
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="list-option" id="option-3">
+                        <a href="/user/admin_teachers" id="link-3" class="icon">
+                            <i class="fa-solid fa-person-chalkboard fa-2x"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-2">Maestros</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="list-option" id="option-4">
+                        <a href="/user/admin_groups" id="link-4" class="icon">
+                            <i class="fa-solid fa-people-group fa-2x"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-3">Grupos</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="list-option" id="option-5">
+                        <a href="/maestro/register" id="link-5" class="icon">
+                            <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                            <div class="icon-text-flex">
+                                <p id="text-4">Registrar maestro</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endif %}
+                </ul>
+            </div>
+        </nav>
+        <div class="header-bar-title">
+            <h1>Knownhome</h1>
+        </div>
+        <div class="header-bar-user">
+            <div class="header-bar-user-image">
+                <h2>{{g.user['username']}}</h2>
+                <img id="profile-image" src="{{url_for('static', filename='users/Images/header_image.jpg')}}" alt="" >
+            </div>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div class="separator">
+                <hr>
+            </div>
+            <ul class="dropdown-menu-links">
+                <li class="dropdown-menu-link">
+                    <a href="/user/profile"> 
+                        <p>Perfil</p>
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </a>
+                </li>
+                <li class="dropdown-menu-link">
+                    <a href="/auth/logout">
+                        <p>Cerrar sesión</p>
+                        <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="content" class="content">
+        <div class="content-container">
+            {% block content %}
+            
+            {% endblock %}
+        </div>
+    </section>
+</body>
+</html>

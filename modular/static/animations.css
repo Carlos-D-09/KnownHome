@@ -1,0 +1,61 @@
+.show{
+    animation: show 1s ease-in-out forwards;
+}
+
+.remove{
+    animation: remove 1s ease-in-out forwards;
+}
+
+.spinner{
+    width: 8px;
+    height: 8px;
+    border: 3px solid rgba(124, 124, 124, 0.525); /* Light grey */
+    border-top: 3px solid #263fa1; /* Blue */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes show {
+  from {
+    opacity: 0; /* Comienza completamente oculto */
+  }
+  to {
+    opacity: 1; /* Termina completamente visible */
+  }
+}
+
+@keyframes remove {
+  from {
+    opacity: 1; /* Comienza completamente visible */
+  }
+  to {
+    opacity: 0; /* Termina completamente oculto */
+  }
+}
+
+@keyframes show_nav_bar {
+  0%{
+    transform: scale(0);
+    transform-origin: top left;
+  }
+  100%{
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
+
+@keyframes hide_nav_bar {
+  0%{
+    transform: scale(1);
+    transform-origin: top left;
+  }
+  100%{
+    transform: scale(0);
+    transform-origin: top left;
+  }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

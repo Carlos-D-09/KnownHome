@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}
+Imagenes capturadas en mis grupos
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('static', filename='users/CSS/admin_images.css')}}">
+{% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static',filename='users/JS/admin_images/main.js')}}" type="module"></script>
+{% endblock %}
+
+{% block content %}
+<div class="images-flex-container">
+    <div class="images-header">
+        {% if g.user['rol'] == 'administrador' %}
+            <h2>Imágenes en los grupos de mis maestros</h2>
+        {% elif g.user['rol'] == 'supervisor' %}
+            <h2>Imágenes subidas en la aplicación</h2>
+        {% endif %}
+    </div>
+    <div class="images-content" id="images-content">
+        <div id="images-container" class="images-container">
+            {% for image in images %}
+                {% if loop.index <= 20 %}
+                    <div class="image-card">
+                        <div class="image-card-img">
+                            <img src="{{image.ruta}}" alt="">
+                        </div>
+                        <div class="image-card-desc">
+                            <p><b>Grupo: </b>{{image.grupo.nombre}}</p>
+                            
+                            {% if image.user_alumno != None %}
+                                <p><b>Usuario: </b>{{image.user_alumno.username}}</p>
+                            {% else %}
+                                <p><b>Usuario: </b>{{image.user_maestro.username}}</p>
+                            {% endif %}
+                            
+                            <p><b>Objeto: </b>{{image.objeto_clasificado.objeto}}</p>
+                            
+                            {% if image.clasificacion_correcta is none %}
+                                <p><b style="color:black">Clasificación: </b></p>
+                            {% elif image.clasificacion_correcta %}
+                                <p class="text-success"><b style="color:black">Clasificación: </b>Correcta</p>
+                            {% else %}
+                                <p class="text-danger"><b style="color:black">Clasificación: </b>Erronea</p>
+                            {% endif %}
+                            
+                            <p><b>Riesgo: </b>{{image.objeto_clasificado.incidencia.nombre}}</p>
+                        </div>
+                    </div> 
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="images-counter" id="images-counter">
+            <button class="change-images" id="previous-images">
+                <i class="fa-solid fa-angles-left fa-xl"></i>
+            </button>
+            {% if images_number < 20 and images_number > 0%}
+                <div class="counter">
+                    <p id="begin">1</p>
+                    <p>/</p>
+                    <p id="end">{{images_number}}</p>
+                </div>
+            {% elif images_number == 0 %}
+                <div class="counter">
+                    <p id="begin">0</p>
+                    <p>/</p>
+                    <p id="end">{{images_number}}</p>
+                </div>
+            {% else %}
+                <div class="counter">
+                    <p id="begin">1</p>
+                    <p> - </p>
+                    <p id="end">{{20}}</p>
+                </div>
+            {% endif %}
+            <button class="change-images" id="next-images">
+                <i class="fa-solid fa-angles-right fa-xl"></i>
+            </button>
+    </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,374 @@
+.index-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    overflow: auto;
+}
+
+/* General statistics */
+.general-statistics{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.statistic{
+    min-width: 150px;
+    max-width: 47%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 2px 4px 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+
+}
+
+.statistic p,
+.statistic b{
+    margin: 0px;
+    padding: 0px;
+}
+
+.statistic b{
+    padding-left: 10px;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.dot-active{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #b8ffaf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot-active span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b8ffaf;
+    animation: breath 2s infinite ease-in;
+}
+
+/* Graph cards container */
+.graphs-container{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+/* Graph card */
+.graph-container{
+    max-width: 400px;
+    height: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px;
+}
+
+/* Graph info */
+.graph-info{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.graph-tag{
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+
+.graph-tag p{
+    padding: 0px;
+    margin: 0px;
+    font-size: .8em;
+}
+
+.graph-select{
+    height: 30px;
+    box-sizing: border-box;
+    
+    border: 0px solid black;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px;
+}
+
+.graph-select:focus{
+    outline: none;
+}
+
+.graph-select:focus::-webkit-scrollbar{
+    height: 5px;
+    width: 10px;
+}
+.graph-select:focus::-webkit-scrollbar-track{
+    background-color: lightgray;
+    border-radius: 4px;
+}
+.graph-select:focus::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 151, 151);
+    border-radius: 4px;
+}
+
+/* Graph content */
+.graph-content{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.graph p{
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+.graph canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Sad face */
+.no-images{
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sad-face{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #FFDB57;
+    box-shadow: inset -10px -10px 0 0 #ffcb05;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.eye{
+    width: 45%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eye span{
+    width: 30px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+}
+
+.eye span:nth-child(2){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: cry 2s infinite ease-in
+}
+
+.mouth{
+    width: 90%;
+    height: 45%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mouth span{
+    width: 100px;
+    height: 40px;
+    border-radius: 100px 100px 7px 7px;
+    background-color: black;
+    
+}
+
+.mouth span:nth-child(2){
+    width: 70px;
+    height: 20px;
+    margin-top: 20px;
+    background: #EE6055;
+    border-radius: 80px 80px 0px 0px;
+    position: absolute;
+}
+
+/* Graph footer */
+.graph-footer{
+    width: 80%;
+    height: 10%;
+}
+
+.graph-footer h2{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+@keyframes breath {
+    0%{
+        width: 10px;
+        height: 10px;
+    }
+    50%{
+        width: 14px;
+        height: 14px;
+    }
+    100%{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@keyframes cry {
+    0%{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    50%{
+        transform: translate(0px, 30px);
+        opacity: 1;
+    }
+    99%{
+        transform: translate(0px, 60px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px, -30px);
+    }
+}
+
+@media (max-width: 1250px){
+    .index-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+    }
+    
+    .general-statistics{
+        width: 100%;
+    }
+}
+
+@media (max-width: 970px){
+    .graph-footer h2{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px){
+    .statistic{
+        font-size: 2.5dvw;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .general-statistics{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .graph-container{
+        width: 100%;
+        height: 400px;
+    }
+    
+    .graph-info{
+        height: 20%;
+    }
+
+    .graph-content{
+        height: 70%;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .graph canvas {
+        width: 90% !important;
+        height: 90% !important;
+    }
+    .statistic{
+        font-size: 1.1dvh;
+    }
+}

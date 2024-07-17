@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación correo electrónico - Knowhome</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{{url_for('static', filename='users/CSS/recover_email.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='buttons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='text.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='animations.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='inputs.css')}}">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/36c2a6041f.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='users/JS/profile/recover_email.js')}}" type="module" ></script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">
+            <h1>Recuperación de correo electrónico</h1>
+            <h3>Hola {{g.user['username']}}, por favor introduce el nuevo correo electrónico</h3>
+        </div>
+        <div class="form-content">
+            <div class="alert-container" id="alert-container">
+                <p class="text-danger-bold" id="text-alert"></p>
+            </div>
+            <div class="inputs-container"">
+                <input type="text" id="email" name="email" placeholder="Correo electronico" class="input-border-bottom-transparent"  autocomplete="off">
+                <input type="text" id="email-confirmation" name="email_confirmation" class="input-border-bottom-transparent"  placeholder="Confirma tu correo electrónico">
+            </div>
+        </div>
+        <div class="form-buttons">
+            <button class="button-auth" id="cancel-button">
+                Cancelar
+            </button>
+            <button class="button-auth" id="edit-email-button" >
+                Enviar
+            </button>
+        </div>
+    </div>
+</body>
+</html>

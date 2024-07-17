@@ -1,0 +1,22 @@
+{
+    "target_class": "Users",
+    "data": [{
+        "correo": "test@test.com",
+        "username": "Carlos Daniel Medina Sahagún",
+        "rol": "supervisor",
+        "verified": true,
+        "password": "Test12345?"
+    }, {
+        "correo": "test2@test.com",
+        "username": "Alejandro Guerrero",
+        "rol": "supervisor",
+        "verified": true,
+        "password": "Test12345?"
+    },{
+        "correo": "test3@test.com",
+        "username": "Alejandro Raygoza",
+        "rol": "supervisor",
+        "verified": true,
+        "password": "Test12345?"
+    }]
+}

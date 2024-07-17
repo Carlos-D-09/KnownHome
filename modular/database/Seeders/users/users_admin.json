@@ -1,0 +1,40 @@
+{
+    "target_class": "Users",
+    "data": [
+        {
+            "correo": "test4@test.com",
+            "username": "test4",
+            "rol": "administrador",
+            "verified": false,
+            "password": "Test12345?"
+        },
+        {
+            "correo": "test5@test.com",
+            "username": "test5",
+            "rol": "administrador",
+            "verified": false,
+            "password": "Test12345?"
+        },
+        {
+            "correo": "test6@test.com",
+            "username": "test6",
+            "rol": "administrador",
+            "verified": false,
+            "password": "Test12345?"
+        },
+        {
+            "correo": "test7@test.com",
+            "username": "test7",
+            "rol": "administrador",
+            "verified": false,
+            "password": "Test12345?"
+        },
+        {
+            "correo": "test8@test.com",
+            "username": "test8",
+            "rol": "administrador",
+            "verified": false,
+            "password": "Test12345?"
+        }
+    ]
+}

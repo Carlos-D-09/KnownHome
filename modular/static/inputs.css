@@ -1,0 +1,68 @@
+.input-border-bottom-transparent{
+    color: white;
+    background-color: 	rgba(0, 0, 0, 0);
+    border: 0px solid;
+    border-bottom-width: 1px;
+}
+
+.input-border-bottom-transparent:focus{
+    outline: none;
+}
+
+.input-border-bottom-transparent:autofill,
+.input-border-bottom-gray:autofill:hover, 
+.input-border-bottom-gray:autofill:focus{
+    outline: none;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;;
+}
+
+.input-border-bottom-gray{
+    background-color: 	rgba(221, 212, 223, 0.308);
+    border: 0px solid;
+    border-bottom-width: 1px;
+}
+
+.input-border-bottom-gray:focus{
+    outline: none;
+}
+
+.input-border-bottom-gray:autofill,
+.input-border-bottom-gray:autofill:hover, 
+.input-border-bottom-gray:autofill:focus{
+    outline: none;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-border-bottom-white{
+    background-color: rgb(255, 255, 255);
+    border: 0px solid;
+    border-bottom-width: 1px;
+}
+
+.input-border-bottom-white:focus{
+    outline: none;
+}
+
+.input-border-bottom-white:autofill,
+.input-border-bottom-white:autofill:hover, 
+.input-border-bottom-white:autofill:focus{
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.textarea-border-inner{
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.textarea-border-inner:focus{
+    outline: none;
+    border: 0px solid;
+    box-shadow: 3px 2px 4px;
+}
