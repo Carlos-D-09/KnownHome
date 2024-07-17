@@ -32,7 +32,7 @@ Con fines de desarrollo, la aplicación cuenta con un método de poblamiento par
 
 ## Instalación del proyecto (Linux)
 
-### Prepraración del entorno
+### Preparación del entorno
 Despues de clonar el repositorio, el primer paso para correr el proyecto es preparar el entorno donde se ejecutará, para ello abre en una terminal la carpeta "KnownHome" y ejecuta los siguiente comandos: 
 ```
 virtualenv -p 3.11 venv
