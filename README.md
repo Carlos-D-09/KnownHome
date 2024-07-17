@@ -75,7 +75,7 @@ Ya que se ha corrido por primera vez la aplicación, ya seremos capaces de inici
 ```
 flask init-db
 ```
-> [!NOTE]
+> [!IMPORTANT]
 > Es necesario que la base de datos haya sido previamente creada, no importa si esta contiene algo o no, el script se encargara de vaciar la base de datos y volver a generar las tablas.  
 
 Con fines de desarrollo, la aplicación cuenta con un método de poblamiento para la base de datos con registros de prueba, para hacer uso de ellos es necesario tener una base de datos en vacía y con la estructura de tablas generadas con el comando `init-db`. Para llevar a cabo este poblamiento utilice el siguiente comando: 
