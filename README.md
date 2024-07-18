@@ -1,6 +1,13 @@
 # KnownHome
 
-Repositorio publico para el servidor del proyecto KnownHome
+Repositorio publico para el servidor del proyecto KnownHome. Las funcionalidades de este proyecto son las siguientes: 
+- Hacer uso de un modelo de red neuronal pre-entrenado para clasificar objetos en imágenes
+- Implementar API's de consumo para una aplicación móvil
+- Implementar una página web para la administración de las transacciones en la aplicación móvil
+
+> [!NOTE]
+> - La lista de objetos para los que el proyecto funciona esta implementada en el archivo /modular/__init__.py
+> - Puedes consultar el código utilizado para crear la red neuronal [aquí](#)
 
 ## Requisitos
 - Tener instalada la versión de Python 3.11.5 (No importa que no sea la principal del sistema)
