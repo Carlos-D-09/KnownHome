@@ -4,3 +4,4 @@ Contexto
 Cambios
 .env
 *.keras
+*wsgi

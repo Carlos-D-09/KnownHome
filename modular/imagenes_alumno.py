@@ -6,13 +6,13 @@ from flask import (
 from werkzeug.utils import secure_filename
 from datetime import datetime
 
-from .database.Modelos.imagenes_escaneadas import Imagenes_escaneadas
-from .database.Modelos.grupo_alumno import Grupo_alumno
-from .database.Modelos.grupos import Grupos
-from .database.Modelos.alumnos import Alumnos
-from .database.Modelos.objetos import Objetos
+from database.Modelos.imagenes_escaneadas import Imagenes_escaneadas
+from database.Modelos.grupo_alumno import Grupo_alumno
+from database.Modelos.grupos import Grupos
+from database.Modelos.alumnos import Alumnos
+from database.Modelos.objetos import Objetos
 
-from modular.auth import alumno_required
+from auth import alumno_required
 
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import numpy as np

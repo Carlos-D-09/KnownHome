@@ -6,10 +6,10 @@ from flask import (
     send_file
 )
 
-from .database.Modelos.alumnos import Alumnos
-from .database.Modelos.grupos import Grupos
+from database.Modelos.alumnos import Alumnos
+from database.Modelos.grupos import Grupos
 
-from modular.auth import alumno_required, maestro_required
+from auth import alumno_required, maestro_required
 
 alumno = Blueprint('alumno', __name__, url_prefix='/alumno')
 

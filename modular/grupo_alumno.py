@@ -2,11 +2,11 @@ from flask import (
     Blueprint, #Permite crear modulos configurables dentro de la aplicación
     render_template, request, url_for, g, jsonify
 )
-from .database.Modelos.grupos import Grupos
-from .database.Modelos.grupo_alumno import Grupo_alumno
+from database.Modelos.grupos import Grupos
+from database.Modelos.grupo_alumno import Grupo_alumno
 
-from modular.auth import maestro_required
-from modular.auth import alumno_required
+from auth import maestro_required
+from auth import alumno_required
 
 grupo_alumno = Blueprint('grupo_alumno', __name__, url_prefix='/grupo-alumno')
 

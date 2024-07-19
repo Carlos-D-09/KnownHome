@@ -1,0 +1,19 @@
+import site
+import os
+import sys
+
+# Add the site-packages of the chosen virtualenv to work with
+site.addsitedir('/path/to/venv/lib/pythonX/site-packages')
+
+# Add the app's directory to the PYTHONPATH
+sys.path.insert(0, '/path/to/your/app/directory')
+
+# Activate the virtual environment
+activate_env = os.path.expanduser("/path/to/venv/bin/activate_this.py")
+with open(activate_env) as f:
+    code = compile(f.read(), activate_env, 'exec')
+    exec(code, dict(__file__=activate_env))
+
+from app import create_app 
+
+application = create_app()

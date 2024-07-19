@@ -2,16 +2,16 @@ from flask import (
     Blueprint, g, request, jsonify, session, json
 )
 
-from modular.auth import login_user_web_required, supervisor_required, administrador_required
+from auth import login_user_web_required, supervisor_required, administrador_required
 
-from .database.Modelos.usuarios import Users
-from .database.Modelos.maestros import Maestros
-from .database.Modelos.grupos import Grupos
-from .database.Modelos.grupo_alumno import Grupo_alumno
-from .database.Modelos.alumnos import Alumnos
-from .database.Modelos.objetos import Objetos
-from .database.Modelos.imagenes_escaneadas import Imagenes_escaneadas
-from .database.Modelos.passwords_antiguas import Passwords_antiguas
+from database.Modelos.usuarios import Users
+from database.Modelos.maestros import Maestros
+from database.Modelos.grupos import Grupos
+from database.Modelos.grupo_alumno import Grupo_alumno
+from database.Modelos.alumnos import Alumnos
+from database.Modelos.objetos import Objetos
+from database.Modelos.imagenes_escaneadas import Imagenes_escaneadas
+from database.Modelos.passwords_antiguas import Passwords_antiguas
 
 api_user = Blueprint('api_user', __name__, url_prefix='/user/api')
 

@@ -5,10 +5,10 @@ from flask import (
     render_template, request, url_for, session, current_app, redirect, g, jsonify
 )
 
-from .database.Modelos.usuarios import Users
-from .database.Modelos.maestros import Maestros
-from .database.Modelos.alumnos import Alumnos
-from .database.Modelos.codigos_verificacion import Codigos_verificacion
+from database.Modelos.usuarios import Users
+from database.Modelos.maestros import Maestros
+from database.Modelos.alumnos import Alumnos
+from database.Modelos.codigos_verificacion import Codigos_verificacion
 
 auth = Blueprint('auth', __name__, url_prefix='/auth')
 

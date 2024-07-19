@@ -5,16 +5,16 @@ from flask import (
 )
 
 from datetime import datetime
-from modular.auth import login_partial_required, login_user_web_required, supervisor_required, administrador_required
+from auth import login_partial_required, login_user_web_required, supervisor_required, administrador_required
 
-from .database.Modelos.usuarios import Users
-from .database.Modelos.codigos_verificacion import Codigos_verificacion
-from .database.Modelos.grupos import Grupos
-from .database.Modelos.passwords_antiguas import Passwords_antiguas
-from .database.Modelos.imagenes_escaneadas import Imagenes_escaneadas
-from .database.Modelos.alumnos import Alumnos
-from .database.Modelos.maestros import Maestros
-from .database.Modelos.objetos import Objetos
+from database.Modelos.usuarios import Users
+from database.Modelos.codigos_verificacion import Codigos_verificacion
+from database.Modelos.grupos import Grupos
+from database.Modelos.passwords_antiguas import Passwords_antiguas
+from database.Modelos.imagenes_escaneadas import Imagenes_escaneadas
+from database.Modelos.alumnos import Alumnos
+from database.Modelos.maestros import Maestros
+from database.Modelos.objetos import Objetos
 
 user = Blueprint('user', __name__, url_prefix='/user')
 
