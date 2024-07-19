@@ -3,10 +3,10 @@ from flask import (
     render_template, request, url_for, g, jsonify
 )
 
-from .database.Modelos.maestros import Maestros
-from .database.Modelos.grupos import Grupos
+from database.Modelos.maestros import Maestros
+from database.Modelos.grupos import Grupos
 
-from modular.auth import maestro_required, administrador_required
+from auth import maestro_required, administrador_required
 
 maestro = Blueprint('maestro', __name__, url_prefix='/maestro')
 
