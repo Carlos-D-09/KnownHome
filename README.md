@@ -1,32 +1,32 @@
 # KnownHome
 
-Repositorio publico para el servidor del proyecto KnownHome. Las funcionalidades de este proyecto son las siguientes: 
-- Hacer uso de un modelo de red neuronal pre-entrenado para clasificar objetos en imágenes
-- Implementar API's de consumo para una aplicación móvil
-- Implementar una página web para la administración de las transacciones en la aplicación móvil
+This public repository is for the KnownHome project server. The project has the following objectives: 
+- Use a pre-trained neural network model to classify objects in images.
+- Implement API consumption for a mobile application. 
+- Implement a web page to manage mobile application transactions.
 
 > [!NOTE]
-> - La lista de objetos para los que el proyecto funciona esta implementada en el archivo /modular/__init__.py
-> - Puedes consultar el código utilizado para crear la red neuronal [aquí](https://github.com/Carlos-D-09/object-recognition)
+> - The list of objects that can be classified with the neural network is written into the file `/modular/__init__.py`
+> - You can consult the code to create the neuronal network [here](https://github.com/Carlos-D-09/object-recognition)
 
-## Requisitos
-- Tener instalada la versión de Python 3.11.5 (No importa que no sea la principal del sistema)
-- Contar con la herramienta virtualenv
-- MySQL (SGBD por defecto para la creación y manipulacion de la base de datos)
+## Requirements
+- Has Python 3.11.5 installed (It doesn't matter if It's not the main system version) 
+- virtualenv tool 
+- MySQL (Default DBMS to create and manipulate the database) 
 
-## Instalación del proyecto
+## Project installation
 
-### Preparación del entorno (Windows - Powershell)
-Despues de clonar el repositorio, como administrador abre una terminal en la carpeta "KnownHome" y ejecuta los siguientes comandos: 
+### Preparing environment (Windows - Powershell)
+After cloning the repository, open a terminal as an administrator in the "KnownHome" directory  and execute the following commands: 
 ```
 virtualenv -p 3.11 venv
 . venv/scripts/activate
 python3 -m pip install -r requirements.txt 
 ```
-Los comandos anteriores nos permitirán crear un entorno virutal con la versión de Python que necesita el proyecto e instalar las dependencias necesarias para ejecutarlo.
+These commands create a virtual environment with the correct Python version needed for the project and install the necessary dependencies.
 
-### Preparación del entorno (Linux)
-Abre una terminal en la carpeta "KnownHome" y ejecuta los siguientes comandos:
+### Preparing enviornment (Linux)
+Open a terminal in the "KnownHome" directory and execute the following commands: 
 ```
 virtualenv -p 3.11 venv
 . venv/bin/activate
@@ -34,10 +34,10 @@ python -m pip install -r requirements.txt
 ```
 
 > [!NOTE]
-> El comando `virtualenv -p 3.11 venv` busca la versión especificada de Python en la ruta por defecto de ejecutables. Si tu versión de python está instalada en una ruta diferente, tienes que hacer referencia a esta. Para ello utiliza el siguiente comando: `virtualenv --python /path/to/your/python venv`
+> The command `virtualenv - p 3.11` venv searches the specified Python version into the default executable path. If your Python versión executable is installed on a different path, you must specify the path in the command. To achieve this, you can use the next command: `virtualenv --python /path/to/your/python venv`
 
-### Configuración del archivo .env
-El proyecto requiere de ciertas variables de entorno para funcionar, las cuales vienen ya escritas en una plantilla .env.example. Para usarla, copia y renombra el archivo .env.example a .env, y posteriormente ajusta los valores del archivo .env a los apropiados para tu equipo. A continuación se presenta un ejemplo de un archivo .env: 
+### Setting the .env file
+The project requires certain environment variables to work, which are written into a template .env.example. To use it, copy and rename the file .env.example to .env,  and then adjust the values according to your equipment. Below is an example of a .env file: 
 ```
 SGBD="mysql" #By default the project works with mysql
 DATABASE_HOST="localhost"
@@ -54,27 +54,28 @@ SECRET_KEY = 'secret_key'
 MODEL = '/my_model.keras'
 ```
 > [!NOTE]
-> - APP_EMAIL y APP_EMAIL_PASSWORD son credenciales de aplicación para el envio de correos electrónicos mediante SMTP
-> - Puedes consultar como generar una secret key [aquí](https://flask.palletsprojects.com/en/2.3.x/config/#:~:text=Default%3A%20None-,SECRET_KEY,-%C2%B6)
-> - MODEL debe tener una ruta valida a un modelo keras compatible con tensorflow 2.14
+> - APP_EMAIL and APP_EMAIL_PASSWORD are application credentials to send emails through the SMTP protocol
+> - You can learn how to generate a secret key  [here](https://flask.palletsprojects.com/en/2.3.x/config/#:~:text=Default%3A%20None-,SECRET_KEY,-%C2%B6)
+> - MODEL must have a valid path to a keras model compatible with TensorFlow 2.14
 
-### Corriendo la aplicación por primera vez
-El siguiente paso es crear la estructura de la bases de datos necesaria para que el proyecto funcione, para ello es necesario ejecutar al menos una vez el proyecto y terminar la ejcución, lo cual podemos hacer mediante cualquiera de los siguientes comandos: 
+### Running the application for the first time
+The next step is to create the database structure needed for the project. To achieve this, it's essential to execute at least once and then immediately end the execution. To run the project, you can use either of these commands: 
 ```
 flask run
 flask run --debug
 ```
 > [!NOTE]
-> Para terminar la ejecución del servidor utiliza el comando ctrl+c
+> - The virtualenv must be active
+> - To finish the run process, use the key combination ctrl+c
 
-Ya que se ha ejecutado por primera vez la aplicación, ya seremos capaces de inicializar la base de datos, para ello utilizamos el siguiente comando: 
+Once the application has been executed one time, you will be able to create the database structure with the following command: 
 ```
 flask init-db
 ```
 > [!IMPORTANT]
-> Es necesario que la base de datos haya sido previamente creada, no importa si esta contiene algo o no, el script se encargara de vaciar la base de datos y volver a generar las tablas.
+> The database must have been created previously, it doesn´t matter if it is empty or not. The script will empty the database and generate the tables.
 
-Con fines de desarrollo, la aplicación cuenta con un método de poblamiento para la base de datos con registros de prueba, para hacer uso de ellos es necesario tener una base de datos vacía y con la estructura de tablas generadas con el comando `init-db`. Para llevar a cabo este poblamiento utilice el siguiente comando: 
+For development purposes, the application has a seeding method for the database, which contains test records. To use this method, the database must be empty, and the tables generated with the command init-db. To seed the database, use the following command: 
 ```
 flask seed-db
 ```
