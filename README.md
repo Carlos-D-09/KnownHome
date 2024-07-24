@@ -25,7 +25,7 @@ python3 -m pip install -r requirements.txt
 ```
 These commands create a virtual environment with the correct Python version needed for the project and install the necessary dependencies.
 
-### Preparing enviornment (Linux)
+### Preparing environment (Linux)
 Open a terminal in the "KnownHome" directory and execute the following commands: 
 ```
 virtualenv -p 3.11 venv
@@ -34,7 +34,7 @@ python -m pip install -r requirements.txt
 ```
 
 > [!NOTE]
-> The command `virtualenv - p 3.11` venv searches the specified Python version into the default executable path. If your Python versión executable is installed on a different path, you must specify the path in the command. To achieve this, you can use the next command: `virtualenv --python /path/to/your/python venv`
+> The command `virtualenv - p 3.11` venv searches the specified Python version into the default executable path. If your Python version executable is installed on a different path, you must specify the path in the command. To achieve this, you can use the next command: `virtualenv --python /path/to/your/python venv`
 
 ### Setting the .env file
 The project requires certain environment variables to work, which are written into a template .env.example. To use it, copy and rename the file .env.example to .env,  and then adjust the values according to your equipment. Below is an example of a .env file: 
@@ -46,7 +46,7 @@ DATABASE_USER="test"
 DATABASE="test"
 DATABASE_PASSWORD="12345"
 
-#Configuración aplicación
+#Application configuration
 FLASK_APP='modular' #Don't change the name
 APP_EMAIL = 'example@example.com'
 APP_EMAIL_PASSWORD = 'password'
